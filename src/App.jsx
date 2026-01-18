@@ -20,7 +20,7 @@ import Privacy from './pages/privacy/Privacy';
 import EventView from './pages/Events/EventView';
 import Login from './pages/Login';
 import Registration from './pages/registration/Registration';
-import Payment from './pages/payment/Payment';
+// import Payment from './pages/payment/Payment';
 import ServiceBook from './pages/Booking/ServiceBook';
 import Services from './pages/services/Services';
 import ErrorPage from './pages/notFound/ErrorPage';
@@ -31,20 +31,20 @@ import ScrollToTop from './components/ScrollToTop';
 import 'aos/dist/aos.css';
 import { useAuth } from './context/AuthContext';
 import Security from './components/security/Security';
-import Confirm from './pages/Booking/Confirm';
-import ConfirmRoom from './pages/Rooms/ConfirmRoom';
-import AdminApp from './admin/App';
-import Feedback from './admin/pages/feedback/Feedback';
+// import Confirm from './pages/Booking/Confirm';
+// import ConfirmRoom from './pages/Rooms/ConfirmRoom';
+// import AdminApp from './admin/App';
+// import Feedback from './admin/pages/feedback/Feedback';
 import Login1 from './admin/components/login/Login';
 import VideoView from './admin/components/videos/VideoView';
-import RedirectPayment from './pages/payment/RedirectPayment';
-import Profile from './pages/profile/Profile';
-import EditProfile from './pages/profile/EditProfile';
-import RecentBookings from './pages/profile/RecentBookings';
-import EditBooking from './pages/profile/EditBooking';
-import PrevBookings from './pages/profile/PrevBookings';
-import BookingHistory from './pages/profile/BookingHistory';
-import ViewRoom from './pages/profile/ViewRoom';
+// import RedirectPayment from './pages/payment/RedirectPayment';
+// import Profile from './pages/profile/Profile';
+// import EditProfile from './pages/profile/EditProfile';
+// import RecentBookings from './pages/profile/RecentBookings';
+// import EditBooking from './pages/profile/EditBooking';
+// import PrevBookings from './pages/profile/PrevBookings';
+// import BookingHistory from './pages/profile/BookingHistory';
+// import ViewRoom from './pages/profile/ViewRoom';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
@@ -204,23 +204,23 @@ function App() {
             <Route path='/privacy_policy' element={<Privacy />} />
 
             <Route path='/services/:sporti' element={<Services />} />
-            <Route path='/payment/:applicationNo' element={<Payment />} />
+            {/* <Route path='/payment/:applicationNo' element={<Payment />} /> */}
 
             <Route path='/room/:sporti' element={<MainRoomBook />} /> 
             <Route path='/services/book/:sporti' element={<ServiceBook />} />
 
             <Route path='/eventView/:id' element={<EventView />} />
-            <Route path='/confirm/details' element={<Confirm />} />
-            <Route path='/confirm/room/details' element={<ConfirmRoom />} />
+            {/* <Route path='/confirm/details' element={<Confirm />} /> */}
+            {/* <Route path='/confirm/room/details' element={<ConfirmRoom />} /> */}
             <Route path='/view/video/:sporti' element={<VideoView />} />
-            <Route path='/payment/success/:applicationNo' element={<RedirectPayment />} />
-            <Route path='/edit/profile' element={<EditProfile />} />
+            {/* <Route path='/payment/success/:applicationNo' element={<RedirectPayment />} /> */}
+            {/* <Route path='/edit/profile' element={<EditProfile />} />
             <Route path='/recent/bookings' element={<RecentBookings />} />
             <Route path='/previous/bookings' element={<PrevBookings />} />
             <Route path='/history' element={<BookingHistory />} />
             <Route path='/edit/booking/:id' element={<EditBooking />} />
             <Route path='/view/details' element={<ViewRoom />} />
-            <Route path='/profile' element={<Profile/>}/>
+            <Route path='/profile' element={<Profile/>}/> */}
           {/* </Route> 
 
 
@@ -244,8 +244,8 @@ function App() {
          {/* <Route element={<ProtectedRoute/>}>
         
          </Route> */}
-         <Route path='/admin/*' element={<AdminApp />} />
-          <Route path='/admin/feedback' element={<Feedback/>} />
+         {/* <Route path='/admin/*' element={<AdminApp />} /> */}
+          {/* <Route path='/admin/feedback' element={<Feedback/>} /> */}
           {/* <Route path='/create/membership' element={<CreateMember/>}/> */}
           <Route path='/admin/login' element={<Login1/>} />
 
